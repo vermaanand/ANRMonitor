@@ -1,16 +1,26 @@
-# ANRMonitor
+# 🔍 ANRMonitor: Lightweight iOS SDK for Real-Time ANR Detection
 
-A lightweight and production-ready iOS SDK to detect ANRs (App Not Responding) in real-time using `RunLoop` observers — no timers involved.
+ANRMonitor is a lightweight, production-ready iOS SDK that helps you detect App Not Responding (ANR) issues in real-time with high accuracy and minimal overhead. It leverages CFRunLoopObserver to monitor the main thread’s responsiveness — with zero dependency on timers or background threads, ensuring maximum reliability even in release builds.
+
+## ANR Flow Diagram
+
+![ANR Flow](https://github.com/vermaanand/ANRMonitor/blob/main/ANRDetector/Assets/flow.png?raw=true)
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
-- Detects ANRs caused by main thread freezes.
-- No timers — uses `RunLoopObserver` for accurate and efficient monitoring.
-- Fully customizable threshold (default: 1.5 seconds).
-- Easily integrates with Crashlytics, Sentry, or your own backend.
-- Supports iOS 13.0+ and Swift 5.7+
+✅ Real-Time ANR Detection: Catch unresponsive UI threads as they happen.
+
+🔄 RunLoop-Based Monitoring: Uses native CFRunLoop observers to detect UI hangs — no polling or scheduled timers.
+
+📦 Lightweight: Minimal footprint; easily pluggable into any iOS app.
+
+🔧 Customizable Thresholds: Configure ANR sensitivity to suit your app’s responsiveness needs.
+
+🧪 Safe for Production: No performance degradation; works silently in the background.
+
+
 
 ---
 
@@ -81,11 +91,8 @@ monitor.startMonitoring { report in
 
 ```
 
-This is section one.
 
 ---
-
-This is section two.
 
 
 📄 License
