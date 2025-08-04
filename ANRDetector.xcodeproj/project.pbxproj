@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BA04079E2E40E5ED0069D5C4 /* ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; };
-		BA0407C22E40F3510069D5C4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0407C02E40F34F0069D5C4 /* Package.swift */; };
+		BA9424DE2E4117700057A301 /* ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; };
+		BA9424DF2E4117700057A301 /* ANRDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA9424E42E4118C30057A301 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9424E32E4118BF0057A301 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,12 +21,34 @@
 			remoteGlobalIDString = BA0407912E40E5ED0069D5C4;
 			remoteInfo = ANRDetector;
 		};
+		BA9424E02E4117700057A301 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0407892E40E5ED0069D5C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0407912E40E5ED0069D5C4;
+			remoteInfo = ANRDetector;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BA9424E22E4117700057A301 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA9424DF2E4117700057A301 /* ANRDetector.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANRDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANRDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA0407C02E40F34F0069D5C4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		BA9424D22E4117590057A301 /* ANRMonitorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANRMonitorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9424E32E4118BF0057A301 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -36,6 +60,11 @@
 		BA0407A12E40E5ED0069D5C4 /* ANRDetectorTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ANRDetectorTests;
+			sourceTree = "<group>";
+		};
+		BA9424D32E4117590057A301 /* ANRMonitorDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ANRMonitorDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -56,15 +85,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA9424CF2E4117590057A301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9424DE2E4117700057A301 /* ANRDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BA0407882E40E5ED0069D5C4 = {
 			isa = PBXGroup;
 			children = (
-				BA0407C02E40F34F0069D5C4 /* Package.swift */,
+				BA9424E32E4118BF0057A301 /* Package.swift */,
 				BA0407942E40E5ED0069D5C4 /* ANRDetector */,
 				BA0407A12E40E5ED0069D5C4 /* ANRDetectorTests */,
+				BA9424D32E4117590057A301 /* ANRMonitorDemo */,
 				BA0407932E40E5ED0069D5C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +112,7 @@
 			children = (
 				BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */,
 				BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */,
+				BA9424D22E4117590057A301 /* ANRMonitorDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +176,30 @@
 			productReference = BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BA9424D12E4117590057A301 /* ANRMonitorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9424DC2E41175A0057A301 /* Build configuration list for PBXNativeTarget "ANRMonitorDemo" */;
+			buildPhases = (
+				BA9424CE2E4117590057A301 /* Sources */,
+				BA9424CF2E4117590057A301 /* Frameworks */,
+				BA9424D02E4117590057A301 /* Resources */,
+				BA9424E22E4117700057A301 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9424E12E4117700057A301 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BA9424D32E4117590057A301 /* ANRMonitorDemo */,
+			);
+			name = ANRMonitorDemo;
+			packageProductDependencies = (
+			);
+			productName = ANRMonitorDemo;
+			productReference = BA9424D22E4117590057A301 /* ANRMonitorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +214,9 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					BA04079C2E40E5ED0069D5C4 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					BA9424D12E4117590057A301 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -171,6 +237,7 @@
 			targets = (
 				BA0407912E40E5ED0069D5C4 /* ANRDetector */,
 				BA04079C2E40E5ED0069D5C4 /* ANRDetectorTests */,
+				BA9424D12E4117590057A301 /* ANRMonitorDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -190,6 +257,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA9424D02E4117590057A301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -197,11 +271,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0407C22E40F3510069D5C4 /* Package.swift in Sources */,
+				BA9424E42E4118C30057A301 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA0407992E40E5ED0069D5C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9424CE2E4117590057A301 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,6 +296,11 @@
 			isa = PBXTargetDependency;
 			target = BA0407912E40E5ED0069D5C4 /* ANRDetector */;
 			targetProxy = BA04079F2E40E5ED0069D5C4 /* PBXContainerItemProxy */;
+		};
+		BA9424E12E4117700057A301 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0407912E40E5ED0069D5C4 /* ANRDetector */;
+			targetProxy = BA9424E02E4117700057A301 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -369,6 +455,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ANRDetector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -402,6 +492,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ANRDetector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_MODULE = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -419,6 +513,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ANRDetectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,7 +532,73 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.ANRDetectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BA9424DA2E41175A0057A301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ANRMonitorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA9424DB2E41175A0057A301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.ANRMonitorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +630,15 @@
 			buildConfigurations = (
 				BA0407AA2E40E5ED0069D5C4 /* Debug */,
 				BA0407AB2E40E5ED0069D5C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9424DC2E41175A0057A301 /* Build configuration list for PBXNativeTarget "ANRMonitorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9424DA2E41175A0057A301 /* Debug */,
+				BA9424DB2E41175A0057A301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

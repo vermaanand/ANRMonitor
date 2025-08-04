@@ -8,6 +8,7 @@
 import Foundation
 import os.log
 
+@MainActor
 /// A generic, production-ready ANR detector SDK using RunLoop Observer.
 public final class ANRMonitor {
 
@@ -38,7 +39,7 @@ public final class ANRMonitor {
         isRunning = true
         onReportGenerated = report
 
-        var runLoopContext = CFRunLoopGetMain()
+        let runLoopContext = CFRunLoopGetMain()
         let activities: CFRunLoopActivity = [
             .beforeSources,
             .afterWaiting

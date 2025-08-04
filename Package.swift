@@ -5,7 +5,7 @@
 //  Created by Anand on 04/08/25.
 //
 
-// swift-tools-version:5.7
+// swift-tools-version:6.0
 import PackageDescription
 
 let package = Package(
@@ -22,7 +22,7 @@ let package = Package(
     targets: [
         .target(
             name: "ANRDetector",
-            path: "ANRDetector/Sources"
+            path: "ANRDetector/Sources/ANRDetector"
         ),
         .testTarget(
             name: "ANRDetectorTests",
@@ -31,4 +31,3 @@ let package = Package(
         )
     ]
 )
-
