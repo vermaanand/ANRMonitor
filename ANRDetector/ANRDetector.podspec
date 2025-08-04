@@ -7,14 +7,14 @@ Pod::Spec.new do |spec|
     using RunLoop observers without timers. It can be integrated with logging systems like Crashlytics or sent to a backend.
   DESC
 
-  spec.homepage     = "https://github.com/your-username/ANRMonitor"
+  spec.homepage     = "https://github.com/vermaanand/ANRMonitor"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Your Name" => "your@email.com" }
+  spec.author       = { "ANRMonitor" => "vermaanand607@gmail.com" }
 
   spec.platform     = :ios, "13.0"
   spec.swift_version = "5.7"
 
-  spec.source       = { :git => "https://github.com/your-username/ANRMonitor.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/vermaanand/ANRMonitor.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "Sources/ANRMonitor/**/*.swift"
   spec.exclude_files = "Sources/ANRMonitor/Info.plist"

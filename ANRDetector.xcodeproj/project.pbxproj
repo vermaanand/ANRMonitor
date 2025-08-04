@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA04079E2E40E5ED0069D5C4 /* ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; };
+		BA0407C22E40F3510069D5C4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0407C02E40F34F0069D5C4 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANRDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANRDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0407C02E40F34F0069D5C4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -60,6 +62,7 @@
 		BA0407882E40E5ED0069D5C4 = {
 			isa = PBXGroup;
 			children = (
+				BA0407C02E40F34F0069D5C4 /* Package.swift */,
 				BA0407942E40E5ED0069D5C4 /* ANRDetector */,
 				BA0407A12E40E5ED0069D5C4 /* ANRDetectorTests */,
 				BA0407932E40E5ED0069D5C4 /* Products */,
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0407C22E40F3510069D5C4 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
