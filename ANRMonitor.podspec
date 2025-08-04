@@ -12,7 +12,6 @@ Pod::Spec.new do |spec|
   spec.author       = { "ANRMonitor" => "vermaanand607@gmail.com" }
 
   spec.platform     = :ios, "13.0"
-  spec.swift_version = "5.7"
 
   spec.source       = { :git => "https://github.com/vermaanand/ANRMonitor.git", :tag => "#{spec.version}" }
 

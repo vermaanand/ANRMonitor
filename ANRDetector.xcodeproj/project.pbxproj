@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A122488C8E617667A8BA5922 /* Pods_ANRDetector_ANRDetectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641D942C6F3F91B6723B9CFD /* Pods_ANRDetector_ANRDetectorTests.framework */; };
-		BA04079E2E40E5ED0069D5C4 /* ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; };
-		BA9424DE2E4117700057A301 /* ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; };
-		BA9424DF2E4117700057A301 /* ANRDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BA9424E42E4118C30057A301 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9424E32E4118BF0057A301 /* Package.swift */; };
-		C4FB9A947C8ADC240A925F51 /* Pods_ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56C03996CB8F587B5BF1EE2 /* Pods_ANRDetector.framework */; };
+		BA788B6E2E41285400919FE6 /* ANRDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA788B572E41277200919FE6 /* ANRDetector.framework */; };
+		BA788B6F2E41285400919FE6 /* ANRDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA788B572E41277200919FE6 /* ANRDetector.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BA04079F2E40E5ED0069D5C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA0407892E40E5ED0069D5C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA0407912E40E5ED0069D5C4;
+			remoteInfo = ANRDetector;
+		};
+		BA788B702E41285400919FE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BA0407892E40E5ED0069D5C4 /* Project object */;
 			proxyType = 1;
@@ -39,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BA9424DF2E4117700057A301 /* ANRDetector.framework in Embed Frameworks */,
+				BA788B6F2E41285400919FE6 /* ANRDetector.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,37 +50,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5447659B96D78DB6D022C6FE /* Pods-ANRDetector-ANRDetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANRDetector-ANRDetectorTests.release.xcconfig"; path = "Target Support Files/Pods-ANRDetector-ANRDetectorTests/Pods-ANRDetector-ANRDetectorTests.release.xcconfig"; sourceTree = "<group>"; };
-		641D942C6F3F91B6723B9CFD /* Pods_ANRDetector_ANRDetectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANRDetector_ANRDetectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7952C13B4DE08A00569DF394 /* Pods-ANRDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANRDetector.release.xcconfig"; path = "Target Support Files/Pods-ANRDetector/Pods-ANRDetector.release.xcconfig"; sourceTree = "<group>"; };
-		7D127F992A7B2ABF450EFEF3 /* Pods-ANRDetector-ANRDetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANRDetector-ANRDetectorTests.debug.xcconfig"; path = "Target Support Files/Pods-ANRDetector-ANRDetectorTests/Pods-ANRDetector-ANRDetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANRDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANRDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9424D22E4117590057A301 /* ANRMonitorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANRMonitorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9424E32E4118BF0057A301 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		CEB12A3579A6BF62A61F1EF0 /* Pods-ANRDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANRDetector.debug.xcconfig"; path = "Target Support Files/Pods-ANRDetector/Pods-ANRDetector.debug.xcconfig"; sourceTree = "<group>"; };
-		F56C03996CB8F587B5BF1EE2 /* Pods_ANRDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANRDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA788B572E41277200919FE6 /* ANRDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANRDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA788B582E41277200919FE6 /* ANRDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANRDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA788B592E41277200919FE6 /* ANRMonitorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANRMonitorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BA0407942E40E5ED0069D5C4 /* ANRDetector */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = ANRDetector;
 			sourceTree = "<group>";
 		};
 		BA0407A12E40E5ED0069D5C4 /* ANRDetectorTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = ANRDetectorTests;
 			sourceTree = "<group>";
 		};
 		BA9424D32E4117590057A301 /* ANRMonitorDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = ANRMonitorDemo;
 			sourceTree = "<group>";
 		};
@@ -88,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FB9A947C8ADC240A925F51 /* Pods_ANRDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA04079E2E40E5ED0069D5C4 /* ANRDetector.framework in Frameworks */,
-				A122488C8E617667A8BA5922 /* Pods_ANRDetector_ANRDetectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,55 +92,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9424DE2E4117700057A301 /* ANRDetector.framework in Frameworks */,
+				BA788B6E2E41285400919FE6 /* ANRDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E0661CEEFBD612F49CCA0E4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F56C03996CB8F587B5BF1EE2 /* Pods_ANRDetector.framework */,
-				641D942C6F3F91B6723B9CFD /* Pods_ANRDetector_ANRDetectorTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		916B4016BD36FFE520B79AAF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CEB12A3579A6BF62A61F1EF0 /* Pods-ANRDetector.debug.xcconfig */,
-				7952C13B4DE08A00569DF394 /* Pods-ANRDetector.release.xcconfig */,
-				7D127F992A7B2ABF450EFEF3 /* Pods-ANRDetector-ANRDetectorTests.debug.xcconfig */,
-				5447659B96D78DB6D022C6FE /* Pods-ANRDetector-ANRDetectorTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		BA0407882E40E5ED0069D5C4 = {
 			isa = PBXGroup;
 			children = (
-				BA9424E32E4118BF0057A301 /* Package.swift */,
 				BA0407942E40E5ED0069D5C4 /* ANRDetector */,
 				BA0407A12E40E5ED0069D5C4 /* ANRDetectorTests */,
 				BA9424D32E4117590057A301 /* ANRMonitorDemo */,
-				BA0407932E40E5ED0069D5C4 /* Products */,
-				916B4016BD36FFE520B79AAF /* Pods */,
-				3E0661CEEFBD612F49CCA0E4 /* Frameworks */,
+				BA788B572E41277200919FE6 /* ANRDetector.framework */,
+				BA788B582E41277200919FE6 /* ANRDetectorTests.xctest */,
+				BA788B592E41277200919FE6 /* ANRMonitorDemo.app */,
+				BA788B6D2E41285400919FE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		BA0407932E40E5ED0069D5C4 /* Products */ = {
+		BA788B6D2E41285400919FE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */,
-				BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */,
-				BA9424D22E4117590057A301 /* ANRMonitorDemo.app */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +136,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0407A62E40E5ED0069D5C4 /* Build configuration list for PBXNativeTarget "ANRDetector" */;
 			buildPhases = (
-				1E07F22666EBBA1DB77D741A /* [CP] Check Pods Manifest.lock */,
 				BA04078D2E40E5ED0069D5C4 /* Headers */,
 				BA04078E2E40E5ED0069D5C4 /* Sources */,
 				BA04078F2E40E5ED0069D5C4 /* Frameworks */,
@@ -188,7 +150,7 @@
 			);
 			name = ANRDetector;
 			productName = ANRDetector;
-			productReference = BA0407922E40E5ED0069D5C4 /* ANRDetector.framework */;
+			productReference = BA788B572E41277200919FE6 /* ANRDetector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BA04079C2E40E5ED0069D5C4 /* ANRDetectorTests */ = {
@@ -210,7 +172,7 @@
 			);
 			name = ANRDetectorTests;
 			productName = ANRDetectorTests;
-			productReference = BA04079D2E40E5ED0069D5C4 /* ANRDetectorTests.xctest */;
+			productReference = BA788B582E41277200919FE6 /* ANRDetectorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BA9424D12E4117590057A301 /* ANRMonitorDemo */ = {
@@ -226,13 +188,14 @@
 			);
 			dependencies = (
 				BA9424E12E4117700057A301 /* PBXTargetDependency */,
+				BA788B712E41285400919FE6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				BA9424D32E4117590057A301 /* ANRMonitorDemo */,
 			);
 			name = ANRMonitorDemo;
 			productName = ANRMonitorDemo;
-			productReference = BA9424D22E4117590057A301 /* ANRMonitorDemo.app */;
+			productReference = BA788B592E41277200919FE6 /* ANRMonitorDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -265,8 +228,10 @@
 			);
 			mainGroup = BA0407882E40E5ED0069D5C4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = BA0407932E40E5ED0069D5C4 /* Products */;
+			productRefGroup = BA0407882E40E5ED0069D5C4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -302,28 +267,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E07F22666EBBA1DB77D741A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ANRDetector-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		39158178E43427D3B7E7E366 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9424E42E4118C30057A301 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +320,11 @@
 			isa = PBXTargetDependency;
 			target = BA0407912E40E5ED0069D5C4 /* ANRDetector */;
 			targetProxy = BA04079F2E40E5ED0069D5C4 /* PBXContainerItemProxy */;
+		};
+		BA788B712E41285400919FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA0407912E40E5ED0069D5C4 /* ANRDetector */;
+			targetProxy = BA788B702E41285400919FE6 /* PBXContainerItemProxy */;
 		};
 		BA9424E12E4117700057A301 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -448,6 +395,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -506,6 +454,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -514,7 +463,6 @@
 		};
 		BA0407A72E40E5ED0069D5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB12A3579A6BF62A61F1EF0 /* Pods-ANRDetector.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,7 +500,6 @@
 		};
 		BA0407A82E40E5ED0069D5C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7952C13B4DE08A00569DF394 /* Pods-ANRDetector.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,7 +537,6 @@
 		};
 		BA0407AA2E40E5ED0069D5C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D127F992A7B2ABF450EFEF3 /* Pods-ANRDetector-ANRDetectorTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -610,7 +556,6 @@
 		};
 		BA0407AB2E40E5ED0069D5C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5447659B96D78DB6D022C6FE /* Pods-ANRDetector-ANRDetectorTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

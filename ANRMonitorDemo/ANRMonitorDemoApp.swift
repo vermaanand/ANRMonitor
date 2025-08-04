@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
-import ANRMonitor
+import ANRDetector
 
 @main
 struct ANRMonitorDemoApp: App {
-    
+    let monitorying: ANRMonitor
     init() {
-        ANRMonitor.shared.start(threshold: 0.4) // Start ANR detection with 400ms threshold
+        monitorying = ANRMonitor(threshold: 0.4) // Start ANR detection with 400ms threshold
 
         // Optional: log when ANR is detected
-        ANRMonitor.shared.onANRDetected = { duration in
-            print("🔥 ANR detected! Blocked for \(duration) seconds")
+        monitorying.startMonitoring { report in
+            print("🔥 ANR Detected :\(report.description)")
         }
     }
 

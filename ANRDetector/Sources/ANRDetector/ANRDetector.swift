@@ -8,7 +8,6 @@
 import Foundation
 import os.log
 
-@MainActor
 /// A generic, production-ready ANR detector SDK using RunLoop Observer.
 public final class ANRMonitor {
 
